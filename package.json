@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "create-proto-ts": "./node_modules/.bin/proto-loader-gen-types --longs=number --enums=String --defaults --oneofs --grpcLib=@grpc/grpc-js --outDir=proto/ ../storage-node-p1/proto/storage-node.proto",
+    "start": "tsc && node ./dist/main.js"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.6.7",
+    "@grpc/proto-loader": "^0.6.12",
+    "typescript": "^4.8.4"
+  }
+}
